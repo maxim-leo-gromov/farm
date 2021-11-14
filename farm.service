@@ -1,0 +1,14 @@
+[Unit]
+Description=Farm management service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u farm_management.py
+WorkingDirectory=/home/pi/farm
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
