@@ -21,7 +21,7 @@ sudo cp farm.service /etc/systemd/system/farm.service
 
 sudo systemctl daemon-reload
 
-6. Пописать наш сервис в автозагрузку:
+6. Прописать наш сервис в автозагрузку:
 
 sudo systemctl enable myscript.service
 
